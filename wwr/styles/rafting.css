@@ -70,18 +70,37 @@ header nav a {
 }
 
 p,
-section,
-article {
+section {
     margin: 16px;
     padding: 8px;
 }
 
-header nav a {
-    text-decoration: none;
+.history_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4px;
+}
+
+.history_content article {
+    width: 250px;
+    padding: 2px;
+}
+
+.history_content img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
 }
 
 header nav a.active {
     color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .socialmedia a {
@@ -131,4 +150,27 @@ h2 {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figure {
+    width: 140px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+figure img {
+    width: 120px;
+    height: auto;
+}
+
+figcaption {
+    position: relative;
+    bottom: .4rem;
+    padding: .1rem;
 }
